@@ -1,0 +1,327 @@
+
+<h2 class="sr-only">Bangladesh Bank Officer (General) MCQ Exam Preparation Dashboard — Syllabus, Practice Questions, and 4-Day Study Plan</h2>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); }
+.tab-bar { display: flex; gap: 8px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.tab { padding: 8px 18px; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); background: transparent; cursor: pointer; font-size: 14px; color: var(--color-text-secondary); transition: all 0.15s; }
+.tab.active { background: var(--color-background-secondary); color: var(--color-text-primary); border-color: var(--color-border-primary); font-weight: 500; }
+.tab:hover:not(.active) { background: var(--color-background-secondary); }
+.panel { display: none; }
+.panel.active { display: block; }
+.subject-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 12px; }
+.subject-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.subject-title { font-size: 15px; font-weight: 500; }
+.badge { font-size: 12px; padding: 3px 10px; border-radius: var(--border-radius-md); }
+.badge-blue { background: #E6F1FB; color: #0C447C; }
+.badge-green { background: #EAF3DE; color: #27500A; }
+.badge-amber { background: #FAEEDA; color: #633806; }
+.badge-purple { background: #EEEDFE; color: #3C3489; }
+.topic-list { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+.topic-pill { font-size: 12px; background: var(--color-background-secondary); color: var(--color-text-secondary); padding: 3px 10px; border-radius: 20px; border: 0.5px solid var(--color-border-tertiary); }
+.progress-bar-bg { background: var(--color-background-secondary); border-radius: 4px; height: 6px; margin-top: 10px; overflow: hidden; }
+.progress-bar-fill { height: 100%; border-radius: 4px; transition: width 0.4s; }
+
+.q-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; margin-bottom: 16px; }
+.q-subject-tag { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-secondary); margin-bottom: 8px; }
+.q-text { font-size: 15px; color: var(--color-text-primary); margin-bottom: 14px; line-height: 1.6; }
+.options { display: flex; flex-direction: column; gap: 8px; }
+.option-btn { text-align: left; padding: 10px 14px; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); background: transparent; cursor: pointer; font-size: 14px; color: var(--color-text-primary); transition: all 0.15s; }
+.option-btn:hover:not(:disabled) { background: var(--color-background-secondary); }
+.option-btn.correct { background: #EAF3DE; border-color: #639922; color: #27500A; }
+.option-btn.wrong { background: #FCEBEB; border-color: #E24B4A; color: #501313; }
+.explanation { margin-top: 12px; padding: 10px 14px; background: var(--color-background-secondary); border-radius: var(--border-radius-md); font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; display: none; }
+.nav-row { display: flex; align-items: center; justify-content: space-between; margin-top: 1rem; }
+.score-badge { font-size: 13px; color: var(--color-text-secondary); }
+
+.day-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 12px; }
+.day-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.day-circle { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 14px; flex-shrink: 0; }
+.task-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.task-row:last-child { border-bottom: none; }
+.task-check { width: 18px; height: 18px; border: 0.5px solid var(--color-border-secondary); border-radius: 4px; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
+.task-check.done { background: #639922; border-color: #639922; }
+.task-text { font-size: 13px; color: var(--color-text-primary); flex: 1; }
+.task-time { font-size: 12px; color: var(--color-text-secondary); white-space: nowrap; }
+.tip-box { background: #E6F1FB; border-radius: var(--border-radius-md); padding: 10px 14px; margin-top: 8px; font-size: 13px; color: #0C447C; line-height: 1.6; }
+.metric-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 1.5rem; }
+.metric { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 14px; }
+.metric-label { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 4px; }
+.metric-value { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+</style>
+
+<div style="padding: 1rem 0">
+
+<div class="metric-row">
+  <div class="metric"><div class="metric-label">Exam date</div><div class="metric-value" style="font-size:16px; margin-top:2px">May 16, Fri</div></div>
+  <div class="metric"><div class="metric-label">Time</div><div class="metric-value" style="font-size:16px; margin-top:2px">3:00–4:00 PM</div></div>
+  <div class="metric"><div class="metric-label">Total marks</div><div class="metric-value">100</div></div>
+  <div class="metric"><div class="metric-label">Negative marking</div><div class="metric-value" style="font-size:16px; margin-top:2px">-0.25</div></div>
+</div>
+
+<div class="tab-bar">
+  <button class="tab active" onclick="showTab('syllabus')">Syllabus</button>
+  <button class="tab" onclick="showTab('practice')">Practice MCQs</button>
+  <button class="tab" onclick="showTab('plan')">4-Day Study Plan</button>
+  <button class="tab" onclick="showTab('tips')">Exam Tips</button>
+</div>
+
+<div id="syllabus" class="panel active">
+  <div class="subject-card">
+    <div class="subject-header">
+      <span class="subject-title">Bangla</span>
+      <span class="badge badge-blue">25 marks</span>
+    </div>
+    <ul class="topic-list">
+      <li class="topic-pill">বানান ও বানানের নিয়ম</li>
+      <li class="topic-pill">বাক্যশুদ্ধি</li>
+      <li class="topic-pill">কারক ও বিভক্তি</li>
+      <li class="topic-pill">সমাস</li>
+      <li class="topic-pill">সন্ধি বিচ্ছেদ</li>
+      <li class="topic-pill">এক কথায় প্রকাশ</li>
+      <li class="topic-pill">প্রায় সমোচ্চারিত ভিন্নার্থক শব্দ</li>
+      <li class="topic-pill">প্রবাদ-প্রবচন</li>
+      <li class="topic-pill">ক্রিয়া ও ক্রিয়ার কাল</li>
+    </ul>
+    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:25%; background:#378ADD;"></div></div>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-header">
+      <span class="subject-title">English</span>
+      <span class="badge badge-green">25 marks</span>
+    </div>
+    <ul class="topic-list">
+      <li class="topic-pill">Vocabulary (synonyms/antonyms)</li>
+      <li class="topic-pill">Idioms & phrases</li>
+      <li class="topic-pill">Sentence correction</li>
+      <li class="topic-pill">Parts of speech</li>
+      <li class="topic-pill">Prepositions</li>
+      <li class="topic-pill">Tense & verb forms</li>
+      <li class="topic-pill">Fill in the blanks</li>
+      <li class="topic-pill">Comprehension</li>
+    </ul>
+    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:25%; background:#639922;"></div></div>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-header">
+      <span class="subject-title">Mathematics</span>
+      <span class="badge badge-amber">25 marks</span>
+    </div>
+    <ul class="topic-list">
+      <li class="topic-pill">Percentage & profit-loss</li>
+      <li class="topic-pill">Ratio & proportion</li>
+      <li class="topic-pill">Average</li>
+      <li class="topic-pill">Time, work & speed</li>
+      <li class="topic-pill">Simple & compound interest</li>
+      <li class="topic-pill">Algebra (equations)</li>
+      <li class="topic-pill">Boat & stream / train</li>
+      <li class="topic-pill">Number series</li>
+    </ul>
+    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:25%; background:#BA7517;"></div></div>
+  </div>
+
+  <div class="subject-card">
+    <div class="subject-header">
+      <span class="subject-title">General Knowledge</span>
+      <span class="badge badge-purple">25 marks</span>
+    </div>
+    <ul class="topic-list">
+      <li class="topic-pill">Bangladesh Bank & banking</li>
+      <li class="topic-pill">Bangladesh affairs</li>
+      <li class="topic-pill">International affairs</li>
+      <li class="topic-pill">Science & technology</li>
+      <li class="topic-pill">Geography</li>
+      <li class="topic-pill">Liberation War 1971</li>
+      <li class="topic-pill">Current events</li>
+      <li class="topic-pill">Economy & finance basics</li>
+    </ul>
+    <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:25%; background:#7F77DD;"></div></div>
+  </div>
+  <p style="font-size:13px; color:var(--color-text-secondary); margin-top:8px;">Each correct answer = +1.00 mark. Each wrong answer = −0.25 mark. Do not guess randomly.</p>
+</div>
+
+<div id="practice" class="panel">
+  <div id="quiz-container"></div>
+  <div class="nav-row">
+    <button class="tab" id="prev-btn" onclick="changeQ(-1)">← Previous</button>
+    <span class="score-badge" id="score-display">Score: 0 / 0</span>
+    <button class="tab" id="next-btn" onclick="changeQ(1)">Next →</button>
+  </div>
+  <div style="margin-top:12px; text-align:center">
+    <button class="tab" onclick="sendPrompt('Give me more practice MCQ questions for the Bangladesh Bank Officer General exam — focus on banking and GK topics')">Get more questions from Claude ↗</button>
+  </div>
+</div>
+
+<div id="plan" class="panel">
+  <div class="day-card">
+    <div class="day-header">
+      <div class="day-circle" style="background:#E6F1FB; color:#0C447C;">D1</div>
+      <div><div style="font-weight:500; font-size:15px;">Tuesday — Bangla + English</div><div style="font-size:12px; color:var(--color-text-secondary);">May 12</div></div>
+    </div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Bangla grammar: সন্ধি, সমাস, কারক revision</span><span class="task-time">60 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Bangla: বানান শুদ্ধি + এক কথায় প্রকাশ practice</span><span class="task-time">30 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">English: Vocabulary (synonyms/antonyms) — 50 words</span><span class="task-time">45 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">English: Tense, prepositions, sentence correction practice</span><span class="task-time">45 min</span></div>
+    <div class="tip-box">Spend extra time on বানান — it's a consistent high-yield area in BSCS exams.</div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">
+      <div class="day-circle" style="background:#FAEEDA; color:#633806;">D2</div>
+      <div><div style="font-weight:500; font-size:15px;">Wednesday — Mathematics</div><div style="font-size:12px; color:var(--color-text-secondary);">May 13</div></div>
+    </div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Percentage, profit-loss, ratio — solve 20 problems</span><span class="task-time">60 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Time-speed-distance, boat & stream problems</span><span class="task-time">45 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Simple & compound interest, average</span><span class="task-time">45 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Full mock math section (25 Qs, timed 20 min)</span><span class="task-time">30 min</span></div>
+    <div class="tip-box">Math is very formula-based — focus on shortcuts for percentage and interest. Avoid brute-force long division.</div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">
+      <div class="day-circle" style="background:#EEEDFE; color:#3C3489;">D3</div>
+      <div><div style="font-weight:500; font-size:15px;">Thursday — General Knowledge</div><div style="font-size:12px; color:var(--color-text-secondary);">May 14</div></div>
+    </div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Banking terms: CRR, SLR, repo rate, BB order 1972</span><span class="task-time">60 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Bangladesh: Liberation War, Constitution, geography</span><span class="task-time">45 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">International: UN, IMF, World Bank, recent events</span><span class="task-time">45 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Read current affairs from a newspaper / online</span><span class="task-time">30 min</span></div>
+    <div class="tip-box">Bangladesh Bank-specific GK is very commonly tested — know CRR (4%), SLR, repo/reverse repo rates, and Bangladesh Bank's founding history.</div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">
+      <div class="day-circle" style="background:#E1F5EE; color:#085041;">D4</div>
+      <div><div style="font-weight:500; font-size:15px;">Friday — Full Revision + Exam Day</div><div style="font-size:12px; color:var(--color-text-secondary);">May 15–16</div></div>
+    </div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Morning: full mock test (100 Qs, 60 min)</span><span class="task-time">90 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Review weak areas only — no new topics</span><span class="task-time">60 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Prepare documents: admit card (2 copies), NID/photo ID, pen</span><span class="task-time">15 min</span></div>
+    <div class="task-row"><div class="task-check" onclick="toggleTask(this)"></div><span class="task-text">Arrive at Tejgaon Model High School by 2:00 PM (1 hr early)</span><span class="task-time">Exam day</span></div>
+    <div class="tip-box">Sleep well on Thursday night. No late cramming — a rested brain performs better on MCQs.</div>
+  </div>
+</div>
+
+<div id="tips" class="panel">
+  <div class="subject-card">
+    <div class="subject-title" style="margin-bottom:10px;">On negative marking strategy</div>
+    <p style="font-size:14px; color:var(--color-text-secondary); line-height:1.7;">Each wrong answer costs −0.25. You need to be at least 80% confident before answering. If you're between 2 options, guess. If you have no idea, skip. Attempting all 100 questions blindly costs you more than skipping 10–15 uncertain ones.</p>
+  </div>
+  <div class="subject-card">
+    <div class="subject-title" style="margin-bottom:10px;">What to bring on exam day</div>
+    <ul class="topic-list" style="margin-bottom:8px;">
+      <li class="topic-pill">Admit card (printed, 2 copies)</li>
+      <li class="topic-pill">National ID or Birth Certificate</li>
+      <li class="topic-pill">Black ink ball-point pen</li>
+      <li class="topic-pill">Pencil (for rough work)</li>
+    </ul>
+    <p style="font-size:13px; color:var(--color-text-secondary); margin-top:8px;">No mobile phones, calculators, smartwatches, or electronic devices allowed.</p>
+  </div>
+  <div class="subject-card">
+    <div class="subject-title" style="margin-bottom:10px;">Time management during the exam</div>
+    <p style="font-size:14px; color:var(--color-text-secondary); line-height:1.7;">You have 60 minutes for 100 questions — 36 seconds per question. Move fast on Bangla and GK (factual). Spend a bit more time on Math. If stuck, mark and move on. Return to skipped questions in the last 10 minutes.</p>
+  </div>
+  <div class="subject-card">
+    <div class="subject-title" style="margin-bottom:10px;">High-yield banking terms to memorize</div>
+    <ul class="topic-list">
+      <li class="topic-pill">CRR = 4%</li>
+      <li class="topic-pill">SLR = 13% (conventional)</li>
+      <li class="topic-pill">Repo rate (check latest)</li>
+      <li class="topic-pill">BB established 1971</li>
+      <li class="topic-pill">BB Order = Presidential Order 127, 1972</li>
+      <li class="topic-pill">1st private bank = AB Bank (1982)</li>
+      <li class="topic-pill">SWIFT, CIB, BACH, BEFTN</li>
+      <li class="topic-pill">CAMELS rating</li>
+      <li class="topic-pill">Lender of last resort</li>
+    </ul>
+  </div>
+  <div style="margin-top:12px; text-align:center">
+    <button class="tab" onclick="sendPrompt('Give me 20 important Bangladesh Bank and banking GK facts to memorize for the Officer General MCQ exam')">Get key banking facts to memorize ↗</button>
+  </div>
+</div>
+
+</div>
+
+<script>
+const questions = [
+  { subject: "Banking GK", q: "Bangladesh Bank was established under which order?", opts: ["Companies Act 1913", "Presidential Order No. 127 of 1972", "Banking Companies Ordinance 1962", "Bangladesh Bank Act 1983"], ans: 1, exp: "Bangladesh Bank was established by Presidential Order No. 127 of 1972, known as the Bangladesh Bank Order, 1972." },
+  { subject: "Banking GK", q: "What does CRR stand for in banking?", opts: ["Credit Reserve Ratio", "Cash Reserve Ratio", "Capital Requirement Ratio", "Current Return Rate"], ans: 1, exp: "CRR (Cash Reserve Ratio) is the percentage of a bank's deposits that must be kept as reserves with the central bank." },
+  { subject: "Mathematics", q: "If a principal of ৳10,000 earns simple interest of ৳1,500 in 3 years, what is the annual interest rate?", opts: ["4%", "5%", "6%", "7%"], ans: 1, exp: "Rate = (Interest × 100) / (Principal × Time) = (1500 × 100) / (10000 × 3) = 5%." },
+  { subject: "English", q: "Choose the correct sentence:", opts: ["She have been working here since 2020.", "She has been working here since 2020.", "She is working here from 2020.", "She was working here since 2020."], ans: 1, exp: "For an action that started in the past and continues to the present, use 'has been + -ing' with 'since' for a specific point in time." },
+  { subject: "Bangla", q: "'সূর্য' শব্দের সন্ধি বিচ্ছেদ কোনটি?", opts: ["সূর + য", "সু + উর্য", "সূ + অর্য", "সুর্ + য"], ans: 1, exp: "সূর্য = সু + উর্য (স্বরসন্ধি: উ + উ = ঊ)" },
+  { subject: "General Knowledge", q: "Which institution is known as the 'lender of last resort' in Bangladesh?", opts: ["Sonali Bank", "Bangladesh Development Bank", "Bangladesh Bank", "IMF Bangladesh Office"], ans: 2, exp: "Bangladesh Bank, as the central bank, acts as the lender of last resort — providing emergency funding to banks facing liquidity crises." },
+  { subject: "Mathematics", q: "A trader marks goods 20% above cost and gives a 10% discount. What is his profit percentage?", opts: ["8%", "10%", "12%", "6%"], ans: 0, exp: "If CP = 100, MP = 120. SP after 10% discount = 120 × 0.90 = 108. Profit = 108 − 100 = 8%." },
+  { subject: "Banking GK", q: "What does SWIFT stand for?", opts: ["System for Worldwide Interbank Financial Transfer", "Society for Worldwide Interbank Financial Telecommunication", "Standard Worldwide Interbank Fund Transfer", "Secure Worldwide International Finance Transfer"], ans: 1, exp: "SWIFT stands for Society for Worldwide Interbank Financial Telecommunication — a messaging network for secure international financial transactions." },
+  { subject: "English", q: "The antonym of 'Frugal' is:", opts: ["Careful", "Miserly", "Extravagant", "Economical"], ans: 2, exp: "Frugal means careful with money/resources. Its antonym is Extravagant (wasteful, spending excessively)." },
+  { subject: "General Knowledge", q: "In which year did the Bangladesh Liberation War take place?", opts: ["1970", "1971", "1972", "1969"], ans: 1, exp: "The Bangladesh Liberation War was fought in 1971, resulting in Bangladesh's independence from Pakistan on December 16, 1971." },
+];
+
+let current = 0;
+let answered = Array(questions.length).fill(null);
+let correct = 0;
+
+function renderQ() {
+  const q = questions[current];
+  const container = document.getElementById('quiz-container');
+  const isAnswered = answered[current] !== null;
+  
+  container.innerHTML = `
+    <div class="q-card">
+      <div class="q-subject-tag">${q.subject} · Q${current + 1} of ${questions.length}</div>
+      <div class="q-text">${q.q}</div>
+      <div class="options">
+        ${q.opts.map((o, i) => {
+          let cls = 'option-btn';
+          if (isAnswered) {
+            if (i === q.ans) cls += ' correct';
+            else if (i === answered[current]) cls += ' wrong';
+          }
+          return `<button class="${cls}" onclick="selectAnswer(${i})" ${isAnswered ? 'disabled' : ''}>${String.fromCharCode(65+i)}. ${o}</button>`;
+        }).join('')}
+      </div>
+      <div class="explanation" id="exp" style="display:${isAnswered ? 'block' : 'none'};">💡 ${q.exp}</div>
+    </div>
+  `;
+  updateScore();
+}
+
+function selectAnswer(idx) {
+  if (answered[current] !== null) return;
+  answered[current] = idx;
+  if (idx === questions[current].ans) correct++;
+  renderQ();
+}
+
+function changeQ(dir) {
+  current = Math.max(0, Math.min(questions.length - 1, current + dir));
+  renderQ();
+}
+
+function updateScore() {
+  const done = answered.filter(a => a !== null).length;
+  document.getElementById('score-display').textContent = `Score: ${correct} / ${done}`;
+  document.getElementById('prev-btn').disabled = current === 0;
+  document.getElementById('next-btn').disabled = current === questions.length - 1;
+}
+
+function toggleTask(el) {
+  el.classList.toggle('done');
+  if (el.classList.contains('done')) {
+    el.innerHTML = '<i class="ti ti-check" style="font-size:12px; color:white;"></i>';
+  } else {
+    el.innerHTML = '';
+  }
+}
+
+function showTab(name) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(name).classList.add('active');
+  event.target.classList.add('active');
+}
+
+renderQ();
+</script>
